@@ -5,8 +5,8 @@
 }
 
 body {
-  color: #555;
-  background-color: rgba(250, 250, 250, 0.853);
+  color: #fff;
+  background-color: rgba(47, 45, 45, 0.942);
   font-size: 15px;
   font-family: Inter;
   font-weight: 400;
@@ -36,7 +36,7 @@ body {
   gap: 20px;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 /*======= Home ======= */
@@ -123,19 +123,39 @@ body {
 .project-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  /* gap: 30px; */
   margin-bottom: 60px;
+  /* border: 3px solid black; */
+}
+.project-card{
+  border: 5px solid rgb(62, 61, 61);
+  display: flex;
+  /* justify-content: space-between; */
+}
+.project-image-card{
+   /* border: 3px solid white; */
+   background-color: rgb(127, 123, 123);
+   width: 100%;
+}
+.project-image {
+  width: 100%;
 }
 
-.project-image {
+.project-details{
+  /* border: 3px solid white; */
+  background-color: rgb(14, 14, 14);
   width: 100%;
 }
 .project-header {
   font-size: 24px;
 }
-.project-language {
+.project-link-span {
   display: flex;
   gap: 20px;
+}
+.project-link{
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ===contact========= */

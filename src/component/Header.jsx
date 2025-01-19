@@ -1,22 +1,22 @@
 import React from "react";
-import { FaInstagram } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { FaWhatsapp } from "react-icons/fa";
-import { CiLinkedin } from "react-icons/ci";
+import { NavLink } from "react-router-dom";
+import Img from "../assets/Laptop code.jpeg";
+
 
 function Header() {
   
   return (
     <div className="header-grid">
       <div className="header-user">
-        <img src={""} alt="User Image" />
+        <img src={Img} alt="User Image" />
         <p>ASMAH</p>
       </div>
       <div className="header-icon">
-      <FaInstagram  />
-      <FaSquareXTwitter />
-      <FaWhatsapp />
-      <CiLinkedin />
+      {/* <NavLink to='/' >Home</NavLink>
+      <NavLink to='/about' >About</NavLink>
+      <NavLink to='/skills' >Skills</NavLink>
+      <NavLink to='/project' >Project</NavLink>
+      <NavLink to='/contact' >Contact</NavLink> */}
         
       </div>
     </div>

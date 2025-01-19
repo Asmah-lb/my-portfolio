@@ -1,5 +1,7 @@
 import React from "react";
 import { FaUser } from "react-icons/fa";
+import Img from "../assets/coding-on-laptop.jpg"
+
 
 function Home() {
   return (
@@ -10,7 +12,6 @@ function Home() {
             <FaUser style={{ fontSize: "15px" }} />
             <h3>HI I'M ASMAH</h3>
             <p>
-              {" "}
               Full stack developer Lorem ipsum dolor sit amet consectetur
               adipisicing elit.
             </p>
@@ -36,7 +37,7 @@ function Home() {
         </div>
       </div>
       <div className="home-img">
-        <img src={""} className="home-img" alt="Asmah's Image" />
+        <img src={Img} className="home-img" alt="Asmah's Image" />
       </div>
     </div>
   );
