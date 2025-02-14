@@ -1,0 +1,23 @@
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .project-image {
+    width: 100%;
+  }
+  
+  .project-header {
+    font-size: 24px;
+  }
+  .project-span {
+    display: flex;
+    gap: 20px;
+  }
+  .project-link{
+    /* color: #fff; */
+    text-decoration: none;
+  }

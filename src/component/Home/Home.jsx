@@ -1,6 +1,7 @@
 import React from "react";
+import "./Home.css"
 import { FaUser } from "react-icons/fa";
-import Img from "../assets/coding-on-laptop.jpg"
+import Img from "../../assets/coding-on-laptop.jpg"
 
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
             </span>
             <span className="home-span">
               <FaUser style={{ fontSize: "15px" }} />
-              <p>Full stack developer consectetur adipisicing elit. </p>
+              <p>Full stack developer  </p>
             </span>
             <span className="home-span">
               <FaUser style={{ fontSize: "15px" }} />
@@ -32,8 +33,8 @@ function Home() {
           </div>
         </div>
         <div className="home-contact">
-          <button className="home-btn">DOWNLOAD CV</button>
-          <button className="home-btn">CONTACT ME</button>
+          <button className="btn">DOWNLOAD CV</button>
+          <button className="btn">CONTACT ME</button>
         </div>
       </div>
       <div className="home-img">
