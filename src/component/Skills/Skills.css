@@ -8,4 +8,8 @@
   .skills-card {
     text-align: center;
   }
-  
+  @media (max-width:1000px) {
+    .skills-grid{
+      gap: 60px;
+    }
+  }

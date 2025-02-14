@@ -22,3 +22,10 @@
     align-items: center;
     font-size: 18px;
   }
+
+  @media (max-width:750px) {
+    .header-grid{
+      gap: 180px;
+
+    }
+  }

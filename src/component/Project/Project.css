@@ -18,6 +18,10 @@
     gap: 20px;
   }
   .project-link{
-    /* color: #fff; */
     text-decoration: none;
+  }
+  @media (max-width:600px) {
+    .project-grid{
+      grid-template-columns: 270px 270px;
+    }
   }
