@@ -1,7 +1,15 @@
-.footer{
-    padding: 30px;
-}
 
 .footer-span{
    padding: 15px;
+   display: flex;
+   justify-content: space-between;
+   font-size: 24px;
+}
+
+@media (max-width:600px) {
+    .footer-span{
+        gap: 75px;
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+    }
 }
