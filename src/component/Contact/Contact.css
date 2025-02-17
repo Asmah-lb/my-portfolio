@@ -29,6 +29,9 @@
     padding: 15px 50px;
     border-bottom: 2px solid black;
   }
+  .contact-input:focus{
+    outline: none;
+  }
   .contact-submit {
     padding: 7px 3px;
     border-bottom: 2px solid black;

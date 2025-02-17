@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr;
     margin: 30px;
     gap: 30px;
+    margin-top: 90px;
   }
   .home-content {
     display: flex;
@@ -61,7 +62,6 @@
     .home-grid{
       grid-template-columns: 320px 320px;
       gap: 15px;
-      /* margin: 10px; */
     }
   }
   @media screen and (max-width:650px) {
