@@ -1,26 +1,33 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from 'react';
 import "./Contact.css"
 
 function Contact() {
-  const [formData, setFormDAta] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
 
-  const handleFormChange = function (e) {
-    const { name, value } = e.target;
-    setFormDAta({
-      ...formData,
-      [name]: value,
-    });
-  };
-  console.log(formData);
+  const [result, setResult] = useState("");
 
-  const handleSubmit = (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
-    alert(formData);
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "bfc5359d-d2ee-4adb-9410-5f370e8402ff");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
+
 
   return (
     <div className="contact-page">
@@ -32,17 +39,15 @@ function Contact() {
       </div>
       
 
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form"  onSubmit={onSubmit} >
         <div className="contact-item">
           <input
             type="text"
             className="contact-input"
             placeholder="Bellaz"
-            required
-            onChange={handleFormChange}
-            name="name"
+            
+           name="name"
             id="name"
-            value={formData.name}
           />
         </div>
 
@@ -51,11 +56,8 @@ function Contact() {
             type="email"
             className="contact-input"
             placeholder="bellaz@mail.com"
-            required
-            onChange={handleFormChange}
             name="email"
             id="email"
-            value={formData.email}
           />
         </div>
 
@@ -65,15 +67,13 @@ function Contact() {
             type="text"
             className="contact-input"
             placeholder="Message"
-            required
-            onChange={handleFormChange}
             name="message"
             id="message"
-            value={formData.message}
+  
           />
         </div>
 
-        <button type="submit" className="contact-submit">
+        <button type="submit" className="contact-submit" value="Send" >
           Submit
         </button>
       </form>

@@ -2,9 +2,15 @@
    display: grid;
     gap: 30px;
     padding: 20px;
+    
 }
-
-
+.about-details{
+    display: flex;
+    flex-direction:column ;
+    gap: 15px;
+    /* border: 1px solid brown; */
+    padding: 20px;
+}
 .about-header{
     font-weight: bold;
     text-align: center;

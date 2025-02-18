@@ -19,5 +19,13 @@ export const skillsData= [
     {
         name: "JavaScript",
         years:"1 year experience"
+    },
+    {
+        name: "MongoDb",
+        years:"1 year experience"
+    },
+    {
+        name: "Express.js",
+        years:"1 year experience"
     }
 ]

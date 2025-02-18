@@ -1,27 +1,27 @@
 export const data =[
     {
-        degree:"Certificate",
-        organizationName:"Erudite",
-        dateOfAttendance:"2020-2021",
-        skillGained:"Designed and developed high-quality web applications, while guiding and mentoring junior coders to achieve exceptional project outcomes"
+        degree:"Undergraduate",
+        organizationName:"National Open University of Nigeria",
+        dateOfAttendance:"2022-till date",
+        skillGained:"Computer Science"
     },
     {
-        degree:"Ongoing",
-        organizationName:"Erudite",
-        dateOfAttendance:"2020-2021",
-        skillGained:"Designed and developed high-quality web applications, while guiding and mentoring junior coders to achieve exceptional project outcomes"
+        degree:"Certificate",
+        organizationName:"Buildspire",
+        dateOfAttendance:"2024-2025",
+        skillGained:"Html, react, css, javascript, node.js, express.js, mongodb"
     },  
     {
-        degree:"Ongoing",
-        organizationName:"Neovarsity",
-        dateOfAttendance:"2020-2021",
-        skillGained:"Designed and developed high-quality web applications, while guiding and mentoring junior coders to achieve exceptional project outcomes"
+        degree:"Certificate",
+        organizationName:"O.A.U international school",
+        dateOfAttendance:"2019-2022",
+        skillGained:"Microsoft Office"
     }, 
     {
         degree:"Certificate",
-        organizationName:"Erudite",
-        dateOfAttendance:"2020-2021",
-        skillGained:"Designed and developed high-quality web applications, while guiding and mentoring junior coders to achieve exceptional project outcomes"
+        organizationName:"Uniosun Junior Code Camp",
+        dateOfAttendance:"2018-2020",
+        skillGained:"Html, plotagon and blender"
     }, 
     
 ]
