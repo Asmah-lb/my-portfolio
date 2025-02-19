@@ -1,5 +1,5 @@
 import Img from "../../assets/coding-on-laptop.jpg"
-// import ArtisanImg from "../../assets/Artisan frontend.PNG"
+
 export const projectData = [
     {
         img:Img,
