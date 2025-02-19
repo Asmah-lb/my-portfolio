@@ -29,8 +29,6 @@
   }
   .home-user p{
     font-size: 17px;
-    /* text-align: start; */
-    /* border: 3px solid beige; */
   }
   .home-list {
     display: flex;
@@ -40,7 +38,6 @@
   .home-span {
     display: flex;
     gap: 15px;
-    /* text-transform: uppercase; */
   }
   .home-contact {
     display: flex;
@@ -73,7 +70,8 @@
   }
   @media screen and (max-width:650px) {
     .home-grid{
-      grid-template-columns: 300px 300px;
+      /* grid-template-columns: 1fr; */
+      grid-template-columns: 280px 300px;
       gap: 12px;
     }
     .home-contact{
@@ -87,6 +85,5 @@
     }
     .home-user{
       font-size: 21px;
-      /* color: brown; */
     }
   }

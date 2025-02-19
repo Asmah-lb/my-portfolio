@@ -23,7 +23,11 @@ body {
 .btn:hover{
   background-color: rgb(239, 239, 248);
 }
-
+@media (max-width:600px) {
+  .btn{
+    padding: 5px;
+  }
+}
 
 
 
